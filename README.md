@@ -23,3 +23,16 @@ django-admin startapp <app name>
 7. add `rest_framework` in the `INSTALLED_APP` too
 8. add `urls.py` file to the apps
 9. add path to the apps in the project `urls.py` file
+10. makemigrations and migrate to initialise the database
+
+## API views:
+- import the restframework methods
+```
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+```
+
+- return in `Response` to get API view
+
+## React:
+
