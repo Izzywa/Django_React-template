@@ -49,3 +49,59 @@ from rest_framework.decorators import api_view
 ```
 npm init -y
 ```
+
+- install packages
+    - `--save-dev`
+
+```
+webpack
+webpack-cli
+@babel/core
+babel-loader
+@babel/preset-env
+@babel/preset-react
+@babel/plugin-transform-class-properties
+react
+react-dom
+```
+- webpack: transpile all into one js file
+- babel: turn code into compatible one with all browsers
+- react
+
+### install any other packages as needed
+
+### add files in frontend app
+- babel.config.json
+    - snippets = `babel`
+    - sets up babel loader 
+
+- webpack.config.js
+    - bundle all js file into one file
+    - serves the one file to the browser
+    - need to determine where is the entry js file and where to output
+    - snippets = `webpack.config`
+    - entry: where the js file will be read from
+    - output: where the js files will be output to
+    - optimization: minimize = smaller = faster browser load
+    - plugings: sommething like optimization
+
+- edit `package.json`
+    - add to script
+    - snippets = `dev`
+    - dev: run webpack in development mode and watch mode that will watch for changes
+        - recompile the js file to the output file
+    - build: production mode
+    - remove the `"type": "commonjs"`
+
+
+### add templates for React to fill in
+- add html file to the `templates > frontend` folder
+    - add necessary items (bootstrap, csrf token, js and css file)
+    - snippets = `html-react`
+
+### render the html file in the views
+
+### add the js files
+- `index.js` in the src folder
+    - create root and render App component 
+- `App.s` in the src > components folder

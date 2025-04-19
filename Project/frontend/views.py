@@ -3,4 +3,4 @@ from django.http import JsonResponse
 # Create your views here.
 
 def index(request):
-    return JsonResponse({'message': 'frontend'})
+    return render(request, 'frontend/index.html')
