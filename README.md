@@ -35,4 +35,17 @@ from rest_framework.decorators import api_view
 - return in `Response` to get API view
 
 ## React:
+- cd into the project directory and run `npm` to see if npm and node installed
+- cd into the frontend app directory
+- add folders in the frontend directory
+    - frontend > templates > frontend
+    - frontend > static
+        - frontend
+        - css
+    - frontend > src
 
+- initialise a node project
+    - will create all needed for a node project 
+```
+npm init -y
+```
